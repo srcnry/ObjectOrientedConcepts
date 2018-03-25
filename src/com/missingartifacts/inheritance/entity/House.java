@@ -1,4 +1,4 @@
-package com.missingartifacts.inheritance;
+package com.missingartifacts.inheritance.entity;
 
 public class House {
     private String address;
@@ -23,5 +23,13 @@ public class House {
 
     public void setOwner(String owner) {
         this.owner = owner;
+    }
+
+    @Override
+    public String toString() {
+        return "House{" +
+                "address='" + address + '\'' +
+                ", owner='" + owner + '\'' +
+                '}';
     }
 }

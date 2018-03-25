@@ -1,4 +1,4 @@
-package com.missingartifacts.inheritance;
+package com.missingartifacts.inheritance.entity;
 
 public class Person {
     private String name;
@@ -23,5 +23,13 @@ public class Person {
 
     public void setSurname(String surname) {
         this.surname = surname;
+    }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "name='" + name + '\'' +
+                ", surname='" + surname + '\'' +
+                '}';
     }
 }
